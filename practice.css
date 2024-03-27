@@ -1,0 +1,154 @@
+*{
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    perspective: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;    
+}
+
+.container{
+    z-index: -1;
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100vw;
+}
+
+.foreground , .background{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* position: absolute; */
+    font-size: 10rem;
+    color: white;
+    font-weight: 600;
+    /* top: 7%;
+    left: 15%; */
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 0.8rem rgba(0,0,0,0.3);
+}
+
+.bg-1{
+    background-image: url(/images/sport-1.jpg);
+}
+
+.bg-2{
+    background-image: url(/images/sport-2.jpg);
+}
+
+.bg-3{
+    background-image: url(/images/sport-3.jpg);
+}
+
+.bg{
+    width: 100%;
+    height: 31.25rem;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.content{
+    background-color: rgb(45,45,45);
+    color: white;
+}
+
+.desc{
+    padding: 3rem;
+}
+
+.page-header{
+    padding: 3rem;
+    padding-bottom: 0;
+    font-size: 3rem;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-heading{
+    /* position: relative; */
+    font-size: 2rem;
+    color: black;
+    justify-content: center;
+    background-color: white;
+    max-width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    /* left: 44%;
+    top: 13%; */
+}
+
+
+@media (max-width:393px) {
+    .heading{
+        font-size: 3rem;
+        margin-top: 8rem;
+    }
+}
+
+@media(min-width:393px) and (max-width:576px){
+    .heading{
+        font-size: 4rem;
+        margin-top: 8rem;
+    }
+}
+
+@media(min-width:576px) and (max-width:768px){
+    .heading{
+        font-size: 6rem;
+        margin-top: 6rem;
+    }
+}
+
+@media(min-width:768px) and (max-width:992px){
+    .heading{
+        font-size: 7.6rem;
+        margin-top: 4rem;
+    }
+}
+
+@media(min-width:992px) and (max-width:1200px){
+    .heading{
+        margin-top: 4rem;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1400px){
+    .heading{
+        margin-top: 2rem;
+    }
+}
+
+@media(min-width:1400px){
+    .heading{
+        margin-top: 2.8rem;
+    }
+}
